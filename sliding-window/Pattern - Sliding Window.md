@@ -8,8 +8,8 @@ The first thing you want to be able to do is <u>identify a problem</u> that uses
 
 Some giveaways:
 
-1. The problem will <u>involve a data structure that is ordered</u>  and iterable like an array or a string. 
-2. You are looking for <u>some subrange in that array/string</u>, like a longest, shortest or target value.
+1. The problem will <u>involve a data structure that is ordered and iterable</u> like an array or a string. 
+2. You are looking for <u>some contiguous subrange in that array/string</u>, like a longest, shortest or target value, or whether a value is contained with the iterable.
 3. There is an apparent naïve or <u>brute force solution that runs in O(N<sub>2</sub>), O(2<sub>N</sub>)</u> or some other large time complexity.
 
 > The biggest giveaway is that the thing you are looking for is often some kind of **optimal**, like the **longest** sequence or **shortest** sequence of something that satisfies a given condition **exactly**.
@@ -48,7 +48,29 @@ We see that two pairs [1, 1] and [1, 3] give same number of 1s in final string. 
 
 **Dynamically Resizable Window**
 
-<img src= "https://raw.githubusercontent.com/aditya109/Grokking-The-Coding-Interview/main/sliding-window/assets/dynamic-sliding-window.svg?token=AFH4RO7H5V5MABZ5K7E7T4277VXEW" height="600"/>
+<img src= "https://raw.githubusercontent.com/aditya109/Grokking-The-Coding-Interview/main/sliding-window/assets/dynamic-sliding-window.svg?token=AFH4RO35KIN43S3POVT4AZ277V7M2" height="600"/>
+
+## Maximum sum of a Contiguous Subarray of Size 3
+
+For a given array,
+
+```
+4 2 1 7 8 1 2 8 1 0
+```
+
+we need to find **maximum** sum of contiguous subarray of **size 3**. The words in bold are constraints here.
+
+[Sliding Window Technique - Algorithmic Mental Models - YouTube](https://www.youtube.com/watch?v=MK-NZ4hN7rs&ab_channel=TheSimpleEngineer)
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -59,6 +81,8 @@ We see that two pairs [1, 1] and [1, 3] give same number of 1s in final string. 
 
 
 ## Maximum Sum Subarray of Size K (easy)
+
+## Smallest sum greater than or equal to given value S (easy)
 
 ## Smallest Subarray with a given sum (easy)
 
