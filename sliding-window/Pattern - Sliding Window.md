@@ -40,7 +40,13 @@ _______________|_____________
 We see that two pairs [1, 1] and [1, 3] give same number of 1s in final string. So, we return [1, 1].
 ```
 
+## Abstract Idea
 
+**Static Sliding Window Technique**
+
+![static-sliding-window](https://raw.githubusercontent.com/aditya109/Grokking-The-Coding-Interview/main/sliding-window/assets/sliding-window-abstract-idea.svg?token=AFH4RO6MIJIZE37AMIVNTCC77VWSA)
+
+**Dynamically Resizable Window**
 
 
 
