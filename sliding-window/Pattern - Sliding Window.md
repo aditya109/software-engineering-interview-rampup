@@ -48,9 +48,7 @@ We see that two pairs [1, 1] and [1, 3] give same number of 1s in final string. 
 
 **Dynamically Resizable Window**
 
-
-
-
+<img src= "https://raw.githubusercontent.com/aditya109/Grokking-The-Coding-Interview/main/sliding-window/assets/dynamic-sliding-window.svg?token=AFH4RO7H5V5MABZ5K7E7T4277VXEW" height="600"/>
 
 
 
