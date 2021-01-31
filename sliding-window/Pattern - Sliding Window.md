@@ -42,15 +42,30 @@ We see that two pairs [1, 1] and [1, 3] give same number of 1s in final string. 
 
 ## Abstract Idea
 
-**Static Sliding Window Technique**
+**Static Sliding Window**
 
 ![static-sliding-window](https://raw.githubusercontent.com/aditya109/Grokking-The-Coding-Interview/main/sliding-window/assets/sliding-window-abstract-idea.svg)
+
+Dead Giveaways:
+
+- max sum subarray of size `K`.
 
 **Dynamically Resizable Window**
 
 ![](https://raw.githubusercontent.com/aditya109/Grokking-The-Coding-Interview/main/sliding-window/assets/dynamic-sliding-window.svg?token=AFH4ROZRN3JNX5CJCXIURXTACYUEU)
 
-## Maximum sum of a Contiguous Subarray of Size 3
+Dead giveaway:
+
+- smallest sum >= some value `S`.
+
+**Dynamic Variant w/ Auxiliary Data Structure**
+
+Dead giveaway:
+
+- Longest substring w/ no more than `k` distinct characters.
+- String permutations.
+
+## Maximum sum of a Contiguous Subarray of Size K
 
 For a given array,
 
@@ -60,31 +75,59 @@ For a given array,
 
 we need to find **maximum** sum of contiguous subarray of **size 3**. The words in bold are constraints here.
 
-[Sliding Window Technique - Algorithmic Mental Models - YouTube](https://www.youtube.com/watch?v=MK-NZ4hN7rs&ab_channel=TheSimpleEngineer)
+```c#
+public int FindMaxSumSubarray(int[] arr, int k)
+{
+    int maxValue = int.MinValue;
+    int currentRunningSum = 0;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Maximum Sum Subarray of Size K (easy)
+    for (int i = 0; i < arr.Length; i++)
+    {
+        currentRunningSum += arr[i];
+        if (i >= k - 1)
+        {
+            maxValue = maxValue < currentRunningSum ? currentRunningSum : maxValue;
+            currentRunningSum -= arr[i - (k - 1)];
+        }
+    }
+    return maxValue;
+}
+```
 
 ## Smallest sum greater than or equal to given value S (easy)
 
 ## Smallest Subarray with a given sum (easy)
+
+For a given array,
+
+```
+4 2 1 7 8 1 2 8 1 0
+```
+
+we need to find **smallest** **subarray** with **given sum >= 8** . The words in bold are constraints here.
+
+```c#
+public int SmallestSubarray(int targetSum, int[] arr)
+{
+    int minWindowSize = int.MaxValue;
+    int currentWindowSum = 0;
+    int windowStart = 0;
+    for (int windowEnd = 0; windowEnd < arr.Length; windowEnd++)
+    {
+        currentWindowSum += arr[windowEnd];
+
+        while(currentWindowSum >= targetSum)
+        {
+            minWindowSize = Math.Min(minWindowSize, (windowEnd - windowStart + 1));
+            currentWindowSum -= arr[windowStart];
+            windowStart++;
+        }
+    }
+    return minWindowSize;
+}
+```
+
+
 
 ## Longest Substring with K Distinct Characters (medium)
 
