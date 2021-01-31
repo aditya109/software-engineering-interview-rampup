@@ -44,11 +44,11 @@ We see that two pairs [1, 1] and [1, 3] give same number of 1s in final string. 
 
 **Static Sliding Window Technique**
 
-![static-sliding-window](https://raw.githubusercontent.com/aditya109/Grokking-The-Coding-Interview/main/sliding-window/assets/sliding-window-abstract-idea.svg?token=AFH4RO6MIJIZE37AMIVNTCC77VWSA)
+![static-sliding-window](https://raw.githubusercontent.com/aditya109/Grokking-The-Coding-Interview/main/sliding-window/assets/sliding-window-abstract-idea.svg)
 
 **Dynamically Resizable Window**
 
-<img src= "https://raw.githubusercontent.com/aditya109/Grokking-The-Coding-Interview/main/sliding-window/assets/dynamic-sliding-window.svg?token=AFH4RO35KIN43S3POVT4AZ277V7M2" height="600"/>
+![](https://raw.githubusercontent.com/aditya109/Grokking-The-Coding-Interview/main/sliding-window/assets/dynamic-sliding-window.svg?token=AFH4ROZRN3JNX5CJCXIURXTACYUEU)
 
 ## Maximum sum of a Contiguous Subarray of Size 3
 
