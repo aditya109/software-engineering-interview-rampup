@@ -4,6 +4,12 @@ namespace Main.Service
 {
     public class MainService
     {
+        /**
+        * Find the min subarray length with sum <= 8
+        * Example input:
+        * [4, 2, 1, 7, 8, 1, 2, 8, 1, 0]
+        * === 1
+        */
         public int SmallestSubarray(int targetSum, int[] arr)
         {
             int minWindowSize = int.MaxValue;
@@ -13,9 +19,10 @@ namespace Main.Service
             {
                 currentWindowSum += arr[windowEnd];
 
-                while(currentWindowSum >= targetSum)
+                while (currentWindowSum >= targetSum)
                 {
-                    minWindowSize = Math.Min(minWindowSize, (windowEnd - windowStart + 1));
+                    minWindowSize =
+                        Math.Min(minWindowSize, (windowEnd - windowStart + 1));
                     currentWindowSum -= arr[windowStart];
                     windowStart++;
                 }

@@ -94,8 +94,6 @@ public int FindMaxSumSubarray(int[] arr, int k)
 }
 ```
 
-## Smallest sum greater than or equal to given value S (easy)
-
 ## Smallest Subarray with a given sum (easy)
 
 For a given array,
@@ -127,9 +125,53 @@ public int SmallestSubarray(int targetSum, int[] arr)
 }
 ```
 
-
-
 ## Longest Substring with K Distinct Characters (medium)
+
+> Dynamic Variant w/ Auxiliary Data Structure type
+
+For a given array,
+
+```
+A A A H H I B C
+```
+
+we need to find the **longest substring length** with **2 distinct characters**. The words in bold are constraints here.
+
+```c#
+public int LongestSubstringLength(char[] arr, int k)
+{
+    int windowStart = 0;
+    int longestSubstringLength = int.MinValue;
+    int currentSubstringLength = 0;
+    Dictionary<char, int> hashFreqTable = new Dictionary<char, int>();
+
+    for (int windowEnd = 0; windowEnd < arr.Length; windowEnd++)
+    {
+        currentSubstringLength++;
+
+        if(hashFreqTable.ContainsKey(arr[windowEnd]))
+        {
+            hashFreqTable[arr[windowEnd]] += 1;
+        }
+        else
+        {
+            hashFreqTable[arr[windowEnd]] = 1;
+        }
+
+        List<char> keys = new List<char>(hashFreqTable.Keys);
+        if(keys.Count() > k)
+        {
+            longestSubstringLength = Math.Max(longestSubstringLength, currentSubstringLength - 1);
+            hashFreqTable[arr[windowStart]] -= 1;
+            currentSubstringLength--;
+            windowStart++;
+        }
+    }
+    return longestSubstringLength;
+}
+```
+
+
 
 ## Fruits into Baskets (medium)
 

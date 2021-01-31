@@ -13,9 +13,11 @@ namespace Main.UnitTests.Service
         }
 
         [Theory]
-        [InlineData()]
-        public void Run_TestCaseType1()
+        [InlineData(new char[] { 'A', 'A', 'A', 'H', 'H', 'I', 'B', 'C' }, 2, 5)]
+        public void Run_TestCaseType1(char[] arr, int k, int expectedResult)
         {
+            var actualResult = _mainService.LongestSubstringLength(arr, k);
+            Assert.Equal(expectedResult, actualResult);
         }
     }
 }

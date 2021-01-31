@@ -7,7 +7,7 @@ namespace Main.UnitTests.Service
     {
         private readonly MainService _mainService;
 
-        public SmallestSubarray_TestCases()
+        public Run_TestCases()
         {
             _mainService = new MainService();
         }
