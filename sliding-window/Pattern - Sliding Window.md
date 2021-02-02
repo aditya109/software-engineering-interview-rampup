@@ -175,7 +175,155 @@ public int LongestSubstringLength(char[] arr, int k)
 
 ## Fruits into Baskets (medium)
 
+In a row of trees, the `i`<sup>th</sup> tree produces fruit with type `tree[i]`.
+
+You **start at any tree of your choice**, then repeatedly perform the following steps:
+
+1. **Add one piece of fruit from this tree to your baskets. If you cannot, stop.**
+2. **Move to the next tree to the right of the current tree. If there is no tree to the right, stop.**
+
+Note that **you do not have any choice after the initial choice of starting tree:** you must perform step 1, then step 2, then back to step 1, then step 2, and so on until you stop.
+
+You have **two baskets, and each basket can carry any quantity of fruit, but you want each basket to only carry one type of fruit each**.
+
+What is the total amount of fruit you can collect with this procedure? The words in bold are constraints here.
+
+**Example 1:**
+
+```
+Input: [1,2,1]
+Output: 3
+Explanation: We can collect [1,2,1].
+```
+
+**Example 2:**
+
+```
+Input: [0,1,2,2]
+Output: 3
+Explanation: We can collect [1,2,2].
+If we started at the first tree, we would only collect [0, 1].
+```
+
+**Example 3:**
+
+```
+Input: [1,2,3,2,2]
+Output: 4
+Explanation: We can collect [2,3,2,2].
+If we started at the first tree, we would only collect [1, 2].
+```
+
+**Example 4:**
+
+```
+Input: [3,3,3,1,2,1,1,2,3,3,4]
+Output: 5
+Explanation: We can collect [1,2,1,1,2].
+If we started at the first tree or the eighth tree, we would only collect 4 fruits.
+```
+
+```c#
+public int FindTotalFruitsInBasket(int[] tree, int basketCount)
+{
+    int windowStart = 0;
+    int totalFruitCount = int.MinValue;
+    int currentFruitsInBasket = 0;
+    Dictionary<int, int> fruitTypeFrequency = new Dictionary<int, int>();
+
+    for (int windowEnd = 0; windowEnd < tree.Length; windowEnd++)
+    {
+        currentFruitsInBasket++;
+
+        if (fruitTypeFrequency.ContainsKey(tree[windowEnd]))
+        {
+            fruitTypeFrequency[tree[windowEnd]] += 1;
+        }
+        else
+        {
+            fruitTypeFrequency[tree[windowEnd]] = 1;
+        }
+        List<int> keys = new List<int>(fruitTypeFrequency.Keys);
+        if (keys.Count() > basketCount)
+        {
+            totalFruitCount = Math.Max(totalFruitCount, currentFruitsInBasket - 1);
+            fruitTypeFrequency[tree[windowStart]] -= 1;
+            if(fruitTypeFrequency[tree[windowStart]] == 0)
+            {
+                fruitTypeFrequency.Remove(tree[windowStart]);
+            }
+            currentFruitsInBasket--;
+            windowStart++;
+        }
+    }
+    return new List<int>(fruitTypeFrequency.Values).Sum();
+}
+```
+
+
+
 ## No-repeat Substring (hard)
+
+Given a string `s`, find the length of the **longest substring** without repeating characters.
+
+**Example 1:**
+
+```
+Input: s = "abcabcbb"
+Output: 3
+Explanation: The answer is "abc", with the length of 3.
+```
+
+**Example 2:**
+
+```
+Input: s = "bbbbb"
+Output: 1
+Explanation: The answer is "b", with the length of 1.
+```
+
+**Example 3:**
+
+```
+Input: s = "pwwkew"
+Output: 3
+Explanation: The answer is "wke", with the length of 3.
+Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
+```
+
+**Example 4:**
+
+```
+Input: s = ""
+Output: 0
+```
+
+```c#
+public int FindLongestSubstringWithoutRepeatingCharacters(string s)
+{
+    int windowStart = 0;
+    int longestSubstringLength = int.MinValue;
+
+    HashSet<char> uniqueCharacterSet = new HashSet<char>(); 
+    for (int windowEnd = 0; windowEnd < s.Length; )
+    {
+        if(uniqueCharacterSet.Contains(s[windowEnd]))
+        {
+            uniqueCharacterSet.Remove(s[windowStart]);
+            windowStart++;
+        }
+        else
+        {
+            uniqueCharacterSet.Add(s[windowEnd]);
+            windowEnd++;
+            longestSubstringLength = Math.Max(longestSubstringLength, uniqueCharacterSet.Count);
+        }
+    }
+    return s.Length == 0 ? 0 : longestSubstringLength;
+}
+```
+
+
 
 ## Longest Substring with Same Letters after Replacement (hard)
 
