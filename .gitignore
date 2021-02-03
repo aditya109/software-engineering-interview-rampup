@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/aspnetcore,dotnetcore,visualstudio,visualstudiocode,python,java,intellij+all,pycharm+all
-# Edit at https://www.toptal.com/developers/gitignore?templates=aspnetcore,dotnetcore,visualstudio,visualstudiocode,python,java,intellij+all,pycharm+all
+# Created by https://www.toptal.com/developers/gitignore/api/go,vscode,intellij+all,pycharm+all,java,java-web,code-java,python,aspnetcore,dotnetcore
+# Edit at https://www.toptal.com/developers/gitignore?templates=go,vscode,intellij+all,pycharm+all,java,java-web,code-java,python,aspnetcore,dotnetcore
 
 ### ASPNETCore ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -272,6 +272,13 @@ __pycache__/
 # Cake - Uncomment if you are using it
 # tools/
 
+### Code-Java ###
+# Language Support for Java(TM) by Red Hat extension for Visual Studio Code - https://marketplace.visualstudio.com/items?itemName=redhat.java
+
+.project
+.classpath
+factoryConfiguration.json
+
 ### DotnetCore ###
 # .NET Core build folders
 bin/
@@ -280,6 +287,27 @@ obj/
 # Common node modules locations
 /node_modules
 /wwwroot/node_modules
+
+### Go ###
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+### Go Patch ###
+/vendor/
+/Godeps/
 
 ### Intellij+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
@@ -393,6 +421,10 @@ modules.xml
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
+### Java-Web ###
+## ignoring target file
+target/
+
 ### PyCharm+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
@@ -454,7 +486,6 @@ hs_err_pid*
 *$py.class
 
 # C extensions
-*.so
 
 # Distribution / packaging
 .Python
@@ -523,7 +554,6 @@ docs/_build/
 doc/_build/
 
 # PyBuilder
-target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -586,225 +616,12 @@ dmypy.json
 # profiling data
 .prof
 
-### VisualStudioCode ###
+### vscode ###
 .vscode/*
+!.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
+!.vscode/extensions.json
 *.code-workspace
 
-### VisualStudioCode Patch ###
-# Ignore all local history of files
-.history
-.ionide
-
-### VisualStudio ###
-##
-## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
-
-# User-specific files
-*.rsuser
-
-# User-specific files (MonoDevelop/Xamarin Studio)
-
-# Mono auto generated files
-mono_crash.*
-
-# Build results
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
-[Ll]ogs/
-
-# Visual Studio 2015/2017 cache/options directory
-# Uncomment if you have tasks that create the project's static files in wwwroot
-
-# Visual Studio 2017 auto generated files
-Generated\ Files/
-
-# MSTest test Results
-
-# NUnit
-nunit-*.xml
-
-# Build Results of an ATL Project
-
-# Benchmark Results
-BenchmarkDotNet.Artifacts/
-
-# .NET Core
-
-# StyleCop
-StyleCopReport.xml
-
-# Files built by Visual Studio
-*_h.h
-*.iobj
-*.ipdb
-*_wpftmp.csproj
-
-# Chutzpah Test files
-
-# Visual C++ cache files
-
-# Visual Studio profiler
-
-# Visual Studio Trace Files
-*.e2e
-
-# TFS 2012 Local Workspace
-
-# Guidance Automation Toolkit
-
-# ReSharper is a .NET coding add-in
-
-# TeamCity is a build add-in
-
-# DotCover is a Code Coverage Tool
-
-# AxoCover is a Code Coverage Tool
-.axoCover/*
-!.axoCover/settings.json
-
-# Coverlet is a free, cross platform Code Coverage Tool
-coverage*[.json, .xml, .info]
-
-# Visual Studio code coverage results
-
-# NCrunch
-
-# MightyMoose
-
-# Web workbench (sass)
-
-# Installshield output folder
-
-# DocProject is a documentation generator add-in
-
-# Click-Once directory
-
-# Publish Web Output
-# Note: Comment the next line if you want to checkin your web deploy settings,
-# but database connection strings (with potential passwords) will be unencrypted
-
-# Microsoft Azure Web App publish settings. Comment the next line if you want to
-# checkin your Azure Web App publish settings, but sensitive information contained
-# in these scripts will be unencrypted
-
-# NuGet Packages
-# NuGet Symbol Packages
-*.snupkg
-# The packages folder can be ignored because of Package Restore
-**/[Pp]ackages/*
-# except build/, which is used as an MSBuild target.
-!**/[Pp]ackages/build/
-# Uncomment if necessary however generally it will be regenerated when needed
-#!**/[Pp]ackages/repositories.config
-# NuGet v3's project.json files produces more ignorable files
-
-# Microsoft Azure Build Output
-
-# Microsoft Azure Emulator
-
-# Windows Store app package directories and files
-*.appx
-*.appxbundle
-*.appxupload
-
-# Visual Studio cache files
-# files ending in .cache can be ignored
-# but keep track of directories ending in .cache
-!?*.[Cc]ache/
-
-# Others
-
-# Including strong name files can present a security risk
-# (https://github.com/github/gitignore/pull/2483#issue-259490424)
-#*.snk
-
-# Since there are multiple workflows, uncomment next line to ignore bower_components
-# (https://github.com/github/gitignore/pull/1529#issuecomment-104372622)
-
-# RIA/Silverlight projects
-
-# Backup & report files from converting an old project file
-# to a newer Visual Studio version. Backup files are not needed,
-# because we have git ;-)
-ServiceFabricBackup/
-*.rptproj.bak
-
-# SQL Server files
-*.ndf
-
-# Business Intelligence projects
-*.rptproj.rsuser
-*- [Bb]ackup.rdl
-*- [Bb]ackup ([0-9]).rdl
-*- [Bb]ackup ([0-9][0-9]).rdl
-
-# Microsoft Fakes
-
-# GhostDoc plugin setting file
-
-# Node.js Tools for Visual Studio
-
-# Visual Studio 6 build log
-
-# Visual Studio 6 workspace options file
-
-# Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
-*.vbw
-
-# Visual Studio LightSwitch build output
-
-# Paket dependency manager
-
-# FAKE - F# Make
-
-# CodeRush personal settings
-.cr/personal
-
-# Python Tools for Visual Studio (PTVS)
-
-# Cake - Uncomment if you are using it
-# tools/**
-# !tools/packages.config
-
-# Tabs Studio
-*.tss
-
-# Telerik's JustMock configuration file
-*.jmconfig
-
-# BizTalk build output
-*.btp.cs
-*.btm.cs
-*.odx.cs
-*.xsd.cs
-
-# OpenCover UI analysis results
-OpenCover/
-
-# Azure Stream Analytics local run output
-ASALocalRun/
-
-# MSBuild Binary and Structured Log
-*.binlog
-
-# NVidia Nsight GPU debugger configuration file
-*.nvuser
-
-# MFractors (Xamarin productivity tool) working folder
-.mfractor/
-
-# Local History for Visual Studio
-.localhistory/
-
-# BeatPulse healthcheck temp database
-healthchecksdb
-
-# Backup folder for Package Reference Convert tool in Visual Studio 2017
-MigrationBackup/
-
-# Ionide (cross platform F# VS Code tools) working folder
-.ionide/
-
-# End of https://www.toptal.com/developers/gitignore/api/aspnetcore,dotnetcore,visualstudio,visualstudiocode,python,java,intellij+all,pycharm+all
+# End of https://www.toptal.com/developers/gitignore/api/go,vscode,intellij+all,pycharm+all,java,java-web,code-java,python,aspnetcore,dotnetcore

@@ -76,6 +76,7 @@ For a given array,
 we need to find **maximum** sum of contiguous subarray of **size 3**. The words in bold are constraints here.
 
 ```c#
+// C#
 public int FindMaxSumSubarray(int[] arr, int k)
 {
     int maxValue = int.MinValue;
@@ -105,6 +106,7 @@ For a given array,
 we need to find **smallest** **subarray** with **given sum >= 8** . The words in bold are constraints here.
 
 ```c#
+// C#
 public int SmallestSubarray(int targetSum, int[] arr)
 {
     int minWindowSize = int.MaxValue;
@@ -138,6 +140,7 @@ A A A H H I B C
 we need to find the **longest substring length** with **2 distinct characters**. The words in bold are constraints here.
 
 ```c#
+// C#
 public int LongestSubstringLength(char[] arr, int k)
 {
     int windowStart = 0;
@@ -224,6 +227,7 @@ If we started at the first tree or the eighth tree, we would only collect 4 frui
 ```
 
 ```c#
+// C#
 public int FindTotalFruitsInBasket(int[] tree, int basketCount)
 {
     int windowStart = 0;
@@ -262,7 +266,7 @@ public int FindTotalFruitsInBasket(int[] tree, int basketCount)
 
 
 
-## No-repeat Substring (hard)
+## No-repeat Substring (medium)
 
 Given a string `s`, find the length of the **longest substring** without repeating characters.
 
@@ -299,6 +303,7 @@ Output: 0
 ```
 
 ```c#
+// C#
 public int FindLongestSubstringWithoutRepeatingCharacters(string s)
 {
     int windowStart = 0;
@@ -326,6 +331,34 @@ public int FindLongestSubstringWithoutRepeatingCharacters(string s)
 
 
 ## Longest Substring with Same Letters after Replacement (hard)
+
+Given a string that consists of only uppercase English letters, you can replace any letter in the string with another letter at most *k* times. Find the length of a longest substring containing all repeating letters you can get after performing the above operations.
+
+**Note:**
+Both the string's length and *k* will not exceed 10<sup>4</sup>.
+
+**Example 1:**
+
+```
+Input: s = "ABAB", k = 2
+Output: 4
+Explanation: Replace the two 'A's with two 'B's or vice versa.
+```
+
+**Example 2:**
+
+```
+Input: s = "AABABBA", k = 1
+Output: 4
+Explanation: Replace the one 'A' in the middle with 'B' and form "AABBBBA". The substring "BBBB" has the longest repeating letters, which is 4.
+```
+
+```c#
+// C#
+
+```
+
+
 
 ## Longest Subarray with Ones after Replacement (hard)
 
