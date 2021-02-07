@@ -2,6 +2,14 @@ package mainapp
 
 import "math"
 
+/**
+* Find the max sum of subarray of a fixed size 3
+* Example input:
+* [4, 2, 1, 7, 8, 1, 2, 8, 1, 0]
+* === 16
+ */
+
+// Run function
 func Run(arr []int, k int) int {
 	maxValue := -1
 	currentRunningSum := 0

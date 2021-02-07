@@ -1,5 +1,5 @@
 from unittest.case import expectedFailure
-from mainApp import MainApp
+from app.mainApp import MainApp
 import unittest
 
 

@@ -1,41 +1,96 @@
 # Steps to run example codebase in <img src="https://cdn.svgporn.com/logos/python.svg" height="50"/> 
 
-> The python implementation of a particular problem is written such that the code can be freely tested amongst numerous test cases.
+> The Python implementation of a particular problem is written such that the code can be freely tested amongst numerous test cases.
 
-The python implementation is structured in the following order:
+To run a particular code implementation in `.NET` for a particular problem set, navigate to the specific problem set.  
 
-```
-MainApp
-├───app
-│   ├───__init__.py
-│   └───mainApp.py
-└───testMainApp.py
-```
+Let's say the problem set is `max_sum_of_contingous_subarray_of_size_n` under `sliding-window`.
 
-## `app`
+So we navigate to `grokking-the-coding-interview` > `sliding-window` > `max_sum_of_contingous_subarray_of_size_n` > `python` > `MainApp`.
 
-The directory contains the main code under `mainApp.py` for the problem statement.
+For `C#`, you could either use `Visual Studio` or any text editor of your choice. I am using `VS Code` for demonstration.
 
-A sample `mainApp.py` has been provided. It should look somewhat like this.
+## Repository Explanation
 
-```python
-# mainApp.py
+1. The directory structure visible would be something like this:
 
-class MainApp:
-    def __init__(self):
-        pass
+   ```powershell
+   MainApp
+   ├───app
+   │   ├───__init__.py
+   │   └───mainApp.py
+   └───testMainApp.py
+   ```
 
-    ''' Problem Statement goes here...
-    '''
+2. `mainApp.py` is the program where actual code resides. The main code resides within `run()`.
 
-    def run(self, arr, k):
-        ''' 
-        code goes here
-        '''
+   ```c#
+   class MainApp:
+       def __init__(self):
+           pass
+   
+       ''' Problem Statement goes here...
+       '''
+   
+       def run(self, arr, k):
+           ''' 
+           code goes here
+           '''
+           return 0
+   ```
 
-        return 0
-```
+3. `testMainApp.py` is the program where unit tests reside.
 
-You can insert your code within `run()`.
+   ```c#
+   from unittest.case import expectedFailure
+   from mainApp import MainApp
+   import unittest
+   
+   class TestMainApp(unittest.TestCase):
+   
+       def setUp(self):
+           self._arguments = [
+               {
+                   'arr': [4, 2, 1, 7, 8, 1, 2, 8, 1, 0],
+                   'k': 3,
+                   'expectedResult': 16
+               },
+               {
+                   'arr': [4, 2, 1, 7, 8, 1, 2, 8, 1, 0],
+                   'k': 4,
+                   'expectedResult': 19
+               },
+               {
+                   'arr': [4, 2, 1, 7, 8, 1, 2, 8, 1, 0],
+                   'k': 5,
+                   'expectedResult': 26
+               },
+               {
+                   'arr': [4, 2, 1, 7, 8, 8, 1, 0],
+                   'k': 3,
+                   'expectedResult': 23
+               },
+           ]
+           self._mainAppInstance = MainApp()
+   
+       def test_run(self):
+           for argument in self._arguments:
+               actualResult = self._mainAppInstance.run(argument['arr'], argument['k'])
+               self.assertEqual(actualResult, argument['expectedResult'])
+   ```
 
- 
+## Steps for `VS Code` users:
+
+1. Open the `MainApp` in `VS Code`.
+
+2. Open `Powershell Terminal`.
+
+   ```powershell
+   🐳 :: MainApp » python -m unittest testMainApp
+   .
+   ----------------------------------------------------------------------
+   Ran 1 test in 0.000s
+   
+   OK
+   ```
+

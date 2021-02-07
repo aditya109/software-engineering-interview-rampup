@@ -4,7 +4,12 @@ import sys
 class MainApp:
     def __init__(self):
         pass
-
+    '''
+    Find the max sum of subarray of a fixed size 3
+    Example input:
+    [4, 2, 1, 7, 8, 1, 2, 8, 1, 0]
+    === 16
+    '''
     def run(self, arr, k):
         max_value = -sys.maxsize - 1
         current_running_sum = 0
