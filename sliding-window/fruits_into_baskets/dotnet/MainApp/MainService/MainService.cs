@@ -21,12 +21,13 @@ namespace Main.Service
          * Explanation: We can collect [1,2,1,1,2].
          * If we started at the first tree or the eighth tree, we would only collect 4 fruits.
          */
-        public int FindTotalFruitsInBasket(int[] tree, int basketCount)
+        public int Run(int[] tree, int basketCount)
         {
             int windowStart = 0;
             int totalFruitCount = int.MinValue;
             int currentFruitsInBasket = 0;
-            Dictionary<int, int> fruitTypeFrequency = new Dictionary<int, int>();
+            Dictionary<int, int> fruitTypeFrequency =
+                new Dictionary<int, int>();
 
             for (int windowEnd = 0; windowEnd < tree.Length; windowEnd++)
             {
@@ -43,7 +44,8 @@ namespace Main.Service
                 List<int> keys = new List<int>(fruitTypeFrequency.Keys);
                 if (keys.Count() > basketCount)
                 {
-                    totalFruitCount = Math.Max(totalFruitCount, currentFruitsInBasket - 1);
+                    totalFruitCount =
+                        Math.Max(totalFruitCount, currentFruitsInBasket - 1);
                     fruitTypeFrequency[tree[windowStart]] -= 1;
                     if (fruitTypeFrequency[tree[windowStart]] == 0)
                     {

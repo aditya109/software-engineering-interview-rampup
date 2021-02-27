@@ -10,7 +10,7 @@ Some giveaways:
 
 1. The problem will <u>involve a data structure that is ordered and iterable</u> like an array or a string. 
 2. You are looking for <u>some contiguous subrange in that array/string</u>, like a longest, shortest or target value, or whether a value is contained with the iterable.
-3. There is an apparent naïve or <u>brute force solution that runs in O(N<sub>2</sub>), O(2<sub>N</sub>)</u> or some other large time complexity.
+3. There is an apparent naïve or <u>brute force solution that runs in O(N<sup>2</sup>), O(2<sup>N</sup>)</u> or some other large time complexity.
 
 > The biggest giveaway is that the thing you are looking for is often some kind of **optimal**, like the **longest** sequence or **shortest** sequence of something that satisfies a given condition **exactly**.
 >
@@ -75,24 +75,22 @@ For a given array,
 
 we need to find **maximum** sum of contiguous subarray of **size 3**. The words in bold are constraints here.
 
-```c#
-// C#
-public int FindMaxSumSubarray(int[] arr, int k)
-{
-    int maxValue = int.MinValue;
-    int currentRunningSum = 0;
+```
+FUNCTION FindMaxSumSubarray
+	Pass In: arr, k
+	
+	maxValue := INTEGER.MIN_VALUE
+	currentRunningSum := 0
 
-    for (int i = 0; i < arr.Length; i++)
-    {
-        currentRunningSum += arr[i];
-        if (i >= k - 1)
-        {
-            maxValue = maxValue < currentRunningSum ? currentRunningSum : maxValue;
-            currentRunningSum -= arr[i - (k - 1)];
-        }
-    }
-    return maxValue;
-}
+	PRECONDITION: variable I is equal to 1
+	WHILE I < arr.LENGTH
+		currentRunningSum = currentRunningSum + arr[I]
+		IF i ≥ k - 1 THEN
+			maxValue = Max(maxValue, currentRunningSum)
+			currentRunningSum = currentRunningSum - arr[I - (k - 1)]
+		ENDIF
+
+	Pass Out: maxValue
 ```
 
 ## Smallest Subarray with a given sum (easy)
