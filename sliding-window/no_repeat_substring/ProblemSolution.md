@@ -34,9 +34,23 @@ Input: s = ""
 Output: 0
 ```
 
-**Pseudocode**:
+**Pseudocode**: O(n)
 
 ```pseudocode
-
+function getNoRepeatSubstring(s)
+	windowStart = 0
+	longestSubstringLength = -INFINITY
+	stringLength = length(s)
+	uniqueCharacterSet = set()
+	
+	for windowEnd in range(stringLength)
+		if s[windowEnd] in uniqueCharacterSet
+			delete s[windowStart] from uniqueCharacterSet
+			windowStart += 1
+        else:
+        	add s[windowEnd] to uniqueCharacterSet
+        	windowEnd += 1
+        	longestSubstringLength = maximum(longestSubstringLength, len(uniqueCharacterSet))
+       return length == 0 ? 0 : longestSubstringLength
 ```
 
