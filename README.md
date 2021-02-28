@@ -34,7 +34,7 @@ The `grokking-the-coding-interview` has :
 
 2. `codesetup` - These contain template code setup for different languages with unit tests setup provided for testing the code's robustness, currently contain four.
 
-   - `Java` [README]([Grokking-The-Coding-Interview/JAVA-README.md at main · aditya109/Grokking-The-Coding-Interview (github.com)](https://github.com/aditya109/Grokking-The-Coding-Interview/blob/main/codesetup/references/JAVA-README.md))
+   - `Java` [README](https://github.com/aditya109/Grokking-The-Coding-Interview/blob/main/codesetup/references/JAVA-README.md)
    - `Golang` [README](https://github.com/aditya109/Grokking-The-Coding-Interview/blob/main/codesetup/references/GOLANG-README.md)
    - `C#` [README](https://github.com/aditya109/Grokking-The-Coding-Interview/blob/main/codesetup/references/C%23-README.md)
    - `Python` [README](https://github.com/aditya109/Grokking-The-Coding-Interview/blob/main/codesetup/references/PYTHON-README.md)
