@@ -8,29 +8,45 @@ class TestMainApp(unittest.TestCase):
     def setUp(self):
         self._arguments = [
             {
-                'arr': [4, 2, 1, 7, 8, 1, 2, 8, 1, 0],
-                'k': 3,
-                'expectedResult': 16
+                's1': "ab",
+                's2': "eidbaooo",
+                'expectedResult': True
             },
             {
-                'arr': [4, 2, 1, 7, 8, 1, 2, 8, 1, 0],
-                'k': 4,
-                'expectedResult': 19
+                's1': "ab",
+                's2': "eidooo",
+                'expectedResult': False
             },
             {
-                'arr': [4, 2, 1, 7, 8, 1, 2, 8, 1, 0],
-                'k': 5,
-                'expectedResult': 26
+                's1': "ab",
+                's2': "eidbbooo",
+                'expectedResult': False
             },
             {
-                'arr': [4, 2, 1, 7, 8, 8, 1, 0],
-                'k': 3,
-                'expectedResult': 23
+                's1': "ab",
+                's2': "eidabbooo",
+                'expectedResult': True
+            },
+            {
+                's1': "ab",
+                's2': "",
+                'expectedResult': False
+            },
+            {
+                's1': "",
+                's2': "",
+                'expectedResult': True
+            },
+            {
+                's1': "",
+                's2': "ab",
+                'expectedResult': True
             },
         ]
         self._mainAppInstance = MainApp()
 
     def test_run(self):
         for argument in self._arguments:
-            actualResult = self._mainAppInstance.run(argument['arr'], argument['k'])
+            actualResult = self._mainAppInstance.run(
+                argument['s1'], argument['s2'])
             self.assertEqual(actualResult, argument['expectedResult'])
