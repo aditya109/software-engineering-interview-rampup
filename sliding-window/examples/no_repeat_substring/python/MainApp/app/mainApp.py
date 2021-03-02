@@ -41,6 +41,6 @@ class MainApp:
             else:
                 unique_character_set.add(s[window_end])
                 window_end += 1
-                longest_substring_length = max(
-                    longest_substring_length, len(unique_character_set))
+            longest_substring_length = max(
+                longest_substring_length, len(unique_character_set))
         return (longest_substring_length, 0)[len(s) == 0]

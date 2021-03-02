@@ -50,7 +50,7 @@ function getNoRepeatSubstring(s)
         else:
         	add s[windowEnd] to uniqueCharacterSet
         	windowEnd += 1
-        	longestSubstringLength = maximum(longestSubstringLength, len(uniqueCharacterSet))
-       return length == 0 ? 0 : longestSubstringLength
+       longestSubstringLength = maximum(longestSubstringLength, len(uniqueCharacterSet))
+    return stringLength == 0 ? 0 : longestSubstringLength
 ```
 
