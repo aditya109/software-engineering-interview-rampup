@@ -11,5 +11,7 @@ So depending on whether the input string is sorted or not, the two-pointer can t
 ## Types of two-pointers
 
 1. **Opposite Directional**: One pointer starts from the beginning while the other pointer starts from the end. They move toward each other until they both meet or some condition satisfy.
+   ![](https://raw.githubusercontent.com/aditya109/Grokking-The-Coding-Interview/main/two-pointers/assets/opposite-directional-2-pointers.svg)
 2. **Equi-Directional**: Both start from the beginning, one slow-runner and the other is fast-runner.
+   ![](https://raw.githubusercontent.com/aditya109/Grokking-The-Coding-Interview/main/two-pointers/assets/equi-directional-2-pointers.svg)
 
