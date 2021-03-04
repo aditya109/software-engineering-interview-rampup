@@ -15,9 +15,9 @@
 - ~~Problem Challenge 4 - Words Concatenation (hard)~~ 
 
 ## 2. Pattern: Two Pointers
-- Pair with Target Sum (easy)
-- Remove Duplicates (easy)
-- Squaring a Sorted Array (easy)
+- ~~Pair with Target Sum (easy)~~
+- ~~Remove Duplicates (easy)~~
+- ~~Squaring a Sorted Array (easy)~~
 - Triplet Sum to Zero (medium)
 - Triplet Sum Close to Target (medium)
 - Triplets with Smaller Sum (medium)
