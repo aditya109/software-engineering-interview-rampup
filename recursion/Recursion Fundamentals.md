@@ -1,3 +1,19 @@
+# Table of Contents
+
+- [What is Recursion ?](#what-is-recursion--)
+  * [Format of a Recursive Method](#format-of-a-recursive-method)
+  * [Generic Recursive Algorithm](#generic-recursive-algorithm)
+  * [Recursion and Memory Visualization](#recursion-and-memory-visualization)
+    + [Memory allocation in Recursion](#memory-allocation-in-recursion)
+    + [Memory Allocation of Recursive Functions](#memory-allocation-of-recursive-functions)
+  * [What is the difference between direct and indirect recursion?](#what-is-the-difference-between-direct-and-indirect-recursion-)
+  * [What is difference between tailed and non-tailed recursion?](#what-is-difference-between-tailed-and-non-tailed-recursion-)
+    + [What is a tail recursion?](#what-is-a-tail-recursion-)
+    + [Why do we care ?](#why-do-we-care--)
+    + [Can a non-tail recursive function be written as tail-recursive to optimize it ?](#can-a-non-tail-recursive-function-be-written-as-tail-recursive-to-optimize-it--)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 # What is Recursion ?
 
 **Recursion** is when a method call itself again and again until it reaches a specified stopping condition.
@@ -9,7 +25,7 @@ Each recursive method consists of 2 parts:
 1. **Base Case**: The base case is where the call to the method stops, meaning, it does not make any subsequent recursive calls.
 2. **Recursive Case:** The recursive case is where the method calls itself again and again until it reaches the base case.
 
-![](D:\Work\go-workspace\src\github.com\aditya109\grokking-the-coding-interview\recursion\assets\recursion_diagram.svg)
+![](https://raw.githubusercontent.com/aditya109/Grokking-The-Coding-Interview/main/recursion/assets/recursion_diagram.svg)
 
 ## Generic Recursive Algorithm
 
@@ -54,7 +70,7 @@ A recursive function calls itself, so the memory for a called function is alloca
 
 > A different copy of local variables is created for each function call. When the base case is reached, the function call. When the base case is reached, the function returns its value to the function that it was called from, and its memory is de-allocated. This process continues until the parent function is returned.
 
-![](D:\Work\go-workspace\src\github.com\aditya109\grokking-the-coding-interview\recursion\assets\memory_stack.svg)
+![](https://raw.githubusercontent.com/aditya109/Grokking-The-Coding-Interview/main/recursion/assets/memory_stack.svg)
 
 ## What is the difference between direct and indirect recursion?
 
@@ -122,25 +138,6 @@ def factTR(n, a):
 def fact(n):
     return factTR(n, 1)
 ```
-
-## Difference between Iterative and Recursive Functions
-
-|                     | Recursive                                                    | Iterative                                                    |
-| ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Definition          | Recursive refers to a situation where a function calls itself repeatedly until a **base condition** is satisfied, at which point further recursive calls stop. | Iteration refers to a situation where some statements are executed again and again using loops until some condition is satisfied. |
-| Application         | Recursion is a process because is always called on a function. | Iterative code is applied to variables. It is a set of instructions that are called upon repeatedly. |
-| Program Termination | Recursion code terminated when the **base case condition** is satisfied. | Iterative code either runs for a particular number of loops or until a specified condition is met. |
-| Code Size           | Recursive code has an overhead time for each recursive call that it makes. | Iterative code has no overhead time.                         |
-| Speed               | Recursive code is slower than iterative code, since it not only runs the program but must also invoke stack memory. | Iterative code has a relatively faster runtime code.         |
-| Stack Utilization   | Recursion uses a stack to store the variable changes and parameters for each recursive call. | Iterative code does not use a stack.                         |
-
-## Converting iterative code to recursive code
-
-***If you have a loop, and it is not obvious what each iteration is doing, replace iteration with recursion.***
-
-
-
-
 
 
 
