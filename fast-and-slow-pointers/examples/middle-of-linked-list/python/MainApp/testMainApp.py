@@ -1,36 +1,35 @@
-from unittest.case import expectedFailure
-from app.mainApp import MainApp
 import unittest
+
+from app.mainApp import MainApp, ListNode
 
 
 class TestMainApp(unittest.TestCase):
 
     def setUp(self):
+        self._mainAppInstance = MainApp()
+
         self._arguments = [
             {
-                'arr': [4, 2, 1, 7, 8, 1, 2, 8, 1, 0],
-                'k': 3,
-                'expectedResult': 16
+                'head': ListNode(1,
+                                 ListNode(2,
+                                          ListNode(3,
+                                                   ListNode(4,
+                                                            ListNode(5, None))))),
+                'expectedResult': 3
             },
             {
-                'arr': [4, 2, 1, 7, 8, 1, 2, 8, 1, 0],
-                'k': 4,
-                'expectedResult': 19
-            },
-            {
-                'arr': [4, 2, 1, 7, 8, 1, 2, 8, 1, 0],
-                'k': 5,
-                'expectedResult': 26
-            },
-            {
-                'arr': [4, 2, 1, 7, 8, 8, 1, 0],
-                'k': 3,
-                'expectedResult': 23
+                'head': ListNode(1,
+                                 ListNode(2,
+                                          ListNode(3,
+                                                   ListNode(4,
+                                                            ListNode(5,
+                                                                     ListNode(6, None)))))),
+                'expectedResult': 4
             },
         ]
         self._mainAppInstance = MainApp()
 
     def test_run(self):
         for argument in self._arguments:
-            actualResult = self._mainAppInstance.run(argument['arr'], argument['k'])
-            self.assertEqual(actualResult, argument['expectedResult'])
+            actual_result = self._mainAppInstance.run(argument['head'])
+            self.assertEqual(argument['expectedResult'], actual_result)

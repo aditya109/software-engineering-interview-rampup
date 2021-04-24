@@ -28,12 +28,12 @@
 
 
 ## 3. Pattern: Fast & Slow pointers
-- LinkedList Cycle (easy)
-- Middle of the LinkedList (easy)
-- Start of LinkedList Cycle (medium) *
-- Happy Number (medium) * 
-- Problem Challenge 1 - Palindrome LinkedList (medium) *
-- Problem Challenge 2 - Rearrange a LinkedList (medium)
+- ~~LinkedList Cycle (easy)~~
+- ~~Middle of the LinkedList (easy)~~
+- ~~Start of LinkedList Cycle (medium) *~~
+- ~~Happy Number (medium) *~~ 
+- ~~Problem Challenge 1 - Palindrome LinkedList (medium) *~~
+- ~~Problem Challenge 2 - Rearrange a LinkedList (medium)~~
 - Problem Challenge 3 - Cycle in a Circular Array (hard) *
 
 ## 4. Pattern: Merge Intervals
@@ -112,10 +112,10 @@
 - Problem Challenge 3 - Rotation Count (medium) *
 
 ## 12. Pattern: Bitwise XOR
-- Single Number (easy)
-- Two Single Numbers (medium) *
-- Complement of Base 10 Number (medium)
-- Problem Challenge 1
+- ~~Single Number (easy)~~
+- ~~Two Single Numbers (medium) *~~
+- ~~Complement of Base 10 Number (medium)~~
+- ~~Problem Challenge 1~~
 
 ## 13. Pattern Top 'K' Elements
 - Top 'K' Numbers (easy)
