@@ -13,7 +13,7 @@ Breadth First Traversal : 1 2 3 4 5
 ```pseudocode
 FUNCTION traverseTreeInBFS
 	passIn: root
-	if root != None
+	if root == None
 		return
 	queue = Queue()
 	queue.enqueue(root)

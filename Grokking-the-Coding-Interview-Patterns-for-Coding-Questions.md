@@ -63,8 +63,8 @@
 - Problem Challenge 2 - Rotate a LinkedList (medium)
 
 ## 7. Pattern: Tree Breadth First Search
-- Binary Tree Level Order Traversal (easy)
-- Reverse Level Order Traversal (easy) * 
+- ~~Binary Tree Level Order Traversal (easy)~~
+- ~~Reverse Level Order Traversal (easy) *~~ 
 - Zigzag Traversal (medium)
 - Level Averages in a Binary Tree (easy)
 - Minimum Depth of a Binary Tree (easy) 

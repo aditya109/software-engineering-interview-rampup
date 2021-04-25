@@ -43,18 +43,20 @@ class TestMainApp(unittest.TestCase):
         self._arguments.append(
             {
                 'root': start,
-                'expectedResult': [[]]
+                'expectedResult': []
             }
         )
         self._mainAppInstance = MainApp()
 
+    @staticmethod
+    def is_equal(list1, list2):
+        for i in range(len(list1)):
+            if list1[i] != list2[i]:
+                return False
+        return True
+
     def test_run(self):
-        def is_equal(list1, list2):
-            for i in range(len(list1)):
-                if list1[i] != list2[i]:
-                    return False
-            return True
 
         for argument in self._arguments:
             actual_result = self._mainAppInstance.run(argument['root'])
-            self.assertTrue(is_equal(argument['expectedResult'], actual_result))
+            self.assertTrue(self.is_equal(argument['expectedResult'], actual_result))

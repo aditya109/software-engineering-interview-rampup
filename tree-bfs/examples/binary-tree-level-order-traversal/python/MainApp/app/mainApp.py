@@ -1,4 +1,3 @@
-from pprint import pprint
 from queue import Queue
 
 
@@ -8,8 +7,8 @@ class TreeNode:
         self.left = left
         self.right = right
 
-    def __str__(self):
-        return str(self.val) + " -> "
+    # def __str__(self):
+    #     return str(self.val) + " -> "
 
 
 class MainApp:
@@ -33,6 +32,10 @@ class MainApp:
     Output: []
  
     '''
+    """
+
+    
+    """
 
     @staticmethod
     def run(start: TreeNode) -> [[]]:
@@ -40,31 +43,22 @@ class MainApp:
             return []
         else:
             q = Queue()
-            q.put(start)
+            q.put((start, 0))
             nodes_corresponding_to_levels = []
             nodes_in_a_level = []
+            current_level = 0
             while not q.empty():
-                e = q.get()
-                nodes_in_a_level.append(e)
-                if q.empty():
-                    for i in nodes_in_a_level:
-                        print(i, end=" ")
-                    print("\n================")
+                (e, lvl) = q.get()
+                if current_level == lvl:
+                    nodes_in_a_level.append(e.val)
+                else:
                     nodes_corresponding_to_levels.append(nodes_in_a_level)
-                    nodes_in_a_level = []
-
+                    nodes_in_a_level = [e.val]
+                    current_level += 1
                 if e.left:
-                    q.put(e.left)
+                    q.put((e.left, lvl + 1))
                 if e.right:
-                    q.put(e.right)
+                    q.put((e.right, lvl + 1))
+            nodes_corresponding_to_levels.append(nodes_in_a_level)
         return nodes_corresponding_to_levels
 
-
-start = TreeNode(1)
-start.left = TreeNode(2)
-start.right = TreeNode(3)
-
-start.left.left = TreeNode(4)
-start.left.right = TreeNode(5)
-
-a = MainApp().run(start)

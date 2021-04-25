@@ -36,11 +36,29 @@ Solution name
 **Pseudocode**
 
 ```pseudocode
-Function problemName
+Function levelOrderTraversal
 	Pass In: root
-	
-	
-	
-	Pass Out:
+	if root is None
+		return []
+	else
+		q = Queue()
+		q.enqueue((root, 0))
+		nodesCorrespondingToLevels = []
+		nodesInCurrentLevel = []
+		currentLevel = 0
+		while isEmpty(q) != True
+			(node, level) = q.deque()
+            if currentLevel == level
+            	add node -> nodesInCurrentLevel
+            else
+            	add nodesInCurrentLevel -> nodesCorrespondingToLevels
+            	nodesInCurrentLevel = [node.val]
+            	currentLevel += 1
+            if node.left != None
+            	q.enqueue((node.left, level+1))
+            else
+	            q.enqueue((node.right, level+1))
+        add nodesInCurrentLevel -> nodesCorrespondingToLevels
+	Pass Out:nodesCorrespondingToLevels
 ```
 

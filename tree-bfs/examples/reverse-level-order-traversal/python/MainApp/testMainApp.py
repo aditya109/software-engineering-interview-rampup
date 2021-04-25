@@ -1,36 +1,50 @@
 import unittest
 
-from app.mainApp import MainApp
+from app.mainApp import MainApp, TreeNode
 
 
 class TestMainApp(unittest.TestCase):
 
     def setUp(self):
-        self._arguments = [
+        self._arguments = list()
+        start = TreeNode(3)
+        start.left = TreeNode(9)
+        start.right = TreeNode(20)
+
+        start.right.left = TreeNode(15)
+        start.right.right = TreeNode(7)
+        self._arguments.append(
             {
-                'arr': [4, 2, 1, 7, 8, 1, 2, 8, 1, 0],
-                'k': 3,
-                'expectedResult': 16
-            },
+                'root': start,
+                'expectedResult': [[15, 7], [9, 20], [3]]
+            }
+        )
+
+        start = TreeNode(3)
+        self._arguments.append(
             {
-                'arr': [4, 2, 1, 7, 8, 1, 2, 8, 1, 0],
-                'k': 4,
-                'expectedResult': 19
-            },
+                'root': start,
+                'expectedResult': [[3]]
+            }
+        )
+        start = None
+        self._arguments.append(
             {
-                'arr': [4, 2, 1, 7, 8, 1, 2, 8, 1, 0],
-                'k': 5,
-                'expectedResult': 26
-            },
-            {
-                'arr': [4, 2, 1, 7, 8, 8, 1, 0],
-                'k': 3,
-                'expectedResult': 23
-            },
-        ]
+                'root': start,
+                'expectedResult': []
+            }
+        )
+
         self._mainAppInstance = MainApp()
+
+    @staticmethod
+    def is_equal(list1, list2):
+        for i in range(len(list1)):
+            if list1[i] != list2[i]:
+                return False
+        return True
 
     def test_run(self):
         for argument in self._arguments:
-            actual_result = self._mainAppInstance.run(argument['arr'])
-            self.assertEqual(argument['expectedResult'], actual_result)
+            actual_result = self._mainAppInstance.run(argument['root'])
+            self.assertTrue(self.is_equal(argument['expectedResult'], actual_result))
