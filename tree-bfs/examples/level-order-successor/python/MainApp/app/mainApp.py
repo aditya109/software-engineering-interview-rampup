@@ -13,43 +13,56 @@ class MainApp:
         pass
 
     '''
-    Given a binary tree, find its minimum depth.
+    Given a binary tree and a node in the binary tree, find Levelorder successor of the given node. 
+    That is, the node that appears after the given node in the level order traversal of the tree.
 
-    The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
+    Note: The task is not just to print the data of the node, you have to return the complete node from the tree.
     
-    Note: A leaf is a node with no children.
+    Examples:
     
-    Example 1:
-    Input: root = [3,9,20,null,null,15,7]
-    Output: 2
+    Consider the following binary tree
+                  20            
+               /      \         
+              10       26       
+             /  \     /   \     
+           4     18  24    27   
+                /  \
+               14   19
+              /  \
+             13  15
     
-    Example 2:
-    Input: root = [2,null,3,null,4,null,5,null,6]
-    Output: 5
- 
- 
+    Levelorder traversal of given tree is:
+    20, 10, 26, 4, 18, 24, 27, 14, 19, 13, 15
+    
+    Input : 24
+    Output : 27
+    
+    Input : 4
+    Output : 18
+    
+     
     '''
-    """
-
-    
-    """
 
     @staticmethod
-    def run(start: TreeNode) -> [[]]:
+    def run(start: TreeNode, key: int) -> [[]]:
         if start is None:
-            return 0
+            return None
         else:
             q = Queue()
-            q.put((start, 0))
+            q.put(start)
+            is_key_found = False
             while not q.empty():
-                (node, level) = q.get()
-
-                # check if node is leaf
-                if not node.left and not node.right:
-                    # store the minimum of min_depth and depth in min_depth
-                    return level + 1
+                node = q.get()
+                if is_key_found:
+                    return node
+                if node.val == key:
+                    is_key_found = True
 
                 if node.left:
-                    q.put((node.left, level + 1))
+                    q.put(node.left)
                 if node.right:
-                    q.put((node.right, level + 1))
+                    q.put(node.right)
+            return None
+
+
+

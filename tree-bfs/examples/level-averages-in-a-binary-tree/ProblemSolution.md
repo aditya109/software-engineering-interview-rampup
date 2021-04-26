@@ -33,7 +33,7 @@ Solution name
 **Pseudocode**
 
 ```pseudocode
-Function problemName
+Function levelAverage
 	if root is None
 		return []
 	else

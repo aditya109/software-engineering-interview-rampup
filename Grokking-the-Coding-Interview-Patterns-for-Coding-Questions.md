@@ -65,21 +65,21 @@
 ## 7. Pattern: Tree Breadth First Search
 - ~~Binary Tree Level Order Traversal (easy)~~
 - ~~Reverse Level Order Traversal (easy) *~~ 
-- Zigzag Traversal (medium)
-- Level Averages in a Binary Tree (easy)
-- Minimum Depth of a Binary Tree (easy) 
-- Level Order Successor (easy)
-- Connect Level Order Siblings (medium)
+- ~~Zigzag Traversal (medium)~~
+- ~~Level Averages in a Binary Tree (easy)~~
+- ~~Minimum Depth of a Binary Tree (easy)~~ 
+- ~~Level Order Successor (easy)~~
+- ~~Connect Level Order Siblings (medium)~~
 - Problem Challenge 1 - Connect All Level Order Siblings (medium)
-- Problem Challenge 2 - Right View of a Binary Tree (easy) 
+- ~~Problem Challenge 2 - Right View of a Binary Tree (easy)~~ 
 
 ## 8. Pattern: Tree Depth First Search
-- Binary Tree Path Sum (easy)
-- All Paths for a Sum (medium) *
-- Sum of Path Numbers (medium)
-- Path With Given Sequence (medium) *
-- Count Paths for a Sum (medium)
-- Problem Challenge 1 - Tree Diameter (medium) *
+- ~~Binary Tree Path Sum (easy)~~
+- ~~All Paths for a Sum (medium) *~~
+- ~~Sum of Path Numbers (medium)~~
+- ~~Path With Given Sequence (medium) *~~
+- ~~Count Paths for a Sum (medium)~~
+- ~~Problem Challenge 1 - Tree Diameter (medium) *~~
 - Problem Challenge 2 - Path with Maximum Sum (hard) *
 
 ## 9. Pattern: Two Heaps

@@ -38,9 +38,24 @@ Solution name
 
 ```pseudocode
 Function levelOrderSuccessor
-	Pass In: root
-	
-	
-	Pass Out:
+	if root is None
+		return []
+	else
+		q = Queue()
+		q.enqueue(root)
+		isKeyFound = False
+		while isEmpty(q) != True
+			node = q.deque()
+            
+            if isKeyFound
+            	return node
+            if node.val == key:
+            	isKeyFound = True
+            
+            if node.left != None
+            	q.enqueue(node.left)
+            else
+	            q.enqueue(node.right)
+	Pass Out:None
 ```
 
