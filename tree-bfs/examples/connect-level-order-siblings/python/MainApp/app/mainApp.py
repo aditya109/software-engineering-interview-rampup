@@ -24,12 +24,12 @@ class MainApp:
       int val;
       Node *left;
       Node *right;
-      Node *next;
+      Node *successor;
     }
-    Populate each next pointer to point to its next right node. 
-    If there is no next right node, the next pointer should be set to NULL.
+    Populate each successor pointer to point to its successor right node. 
+    If there is no successor right node, the successor pointer should be set to NULL.
     
-    Initially, all next pointers are set to NULL.
+    Initially, all successor pointers are set to NULL.
     Follow up:
     
     You may only use constant extra space.
@@ -39,8 +39,8 @@ class MainApp:
     Input: root = [1,2,3,4,5,6,7]
     Output: [1,#,2,3,#,4,5,6,7,#]
     Explanation: Given the above perfect binary tree (Figure A), 
-    your function should populate each next pointer to point to its next right node, just like in Figure B. 
-    The serialized output is in level order as connected by the next pointers, 
+    your function should populate each successor pointer to point to its successor right node, just like in Figure B. 
+    The serialized output is in level order as connected by the successor pointers, 
     with '#' signifying the end of each level.
  
  
@@ -58,7 +58,7 @@ class MainApp:
     #         while not q.empty():
     #             (node, level) = q.get()
     #             if temp_node and level == temp_level:
-    #                 temp_node.next = node
+    #                 temp_node.successor = node
     #
     #             temp_node, temp_level = node, level
     #

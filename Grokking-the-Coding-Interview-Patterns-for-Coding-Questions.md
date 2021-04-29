@@ -56,9 +56,9 @@
 - Problem Challenge 3 - Find the First K Missing Positive Numbers (hard) *
 
 ## 6. Pattern: In-place Reversal of a LinkedList
-- Reverse a LinkedList (easy) 
-- Reverse a Sub-list (medium) 
-- Reverse every K-element Sub-list (medium) *
+- ~~Reverse a LinkedList (easy)~~ 
+- ~~Reverse a Sub-list (medium)~~ 
+- ~~Reverse every K-element Sub-list (medium) *~~
 - Problem Challenge 1 - Reverse alternating K-element Sub-list (medium)
 - Problem Challenge 2 - Rotate a LinkedList (medium)
 

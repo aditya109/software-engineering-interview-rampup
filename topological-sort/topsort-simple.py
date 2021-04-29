@@ -1,32 +1,29 @@
-graph = {
-    'A': ['B', 'C'],
-    'B': ['D', 'E'],
-    'C': ['F'],
-    'D': [],
-    'E': ['F'],
-    'F': []
+gr = {
+    'A': ['D'],
+    'B': ['D'],
+    'C': ['E'],
+    'D': ['E'],
+    'E': []
 }
 
+# graph should be DAG
+# in top-sort for every u -> v, u will come before v in ordering of the graph
+# indegree = incoming edges on the node
+# O(V+E)
+visited = set()
+output_stack = []
 
-def dfs(visited, graph, node):
-    if node not in visited:
-        print(node)
-        visited.add(node)
-        for neighbor in graph[node]:
-            dfs(visited, graph, neighbor)
 
-def top_sort(graph):
-    n = len(list(graph.keys()))
-    v = [False] * n
-    ordering = [0] * n
-    i = n - 1
+def top_sort(graph, start):
+    if start not in visited:
+        visited.add(start)
+        for neighbour in graph[start]:
+            top_sort(graph, neighbour)
+        output_stack.insert(0, start)
 
-    for at in range(n):
-        if v[at] == False:
-            visitedNodes = set()
-            dfs(visitedNodes, graph, at )
-            for nodeId in visitedNodes:
-                ordering[i] = nodeId
-                i = i - 1 
 
-top_sort(graph)
+for vertex in gr:
+    top_sort(gr, vertex)
+
+for node in output_stack:
+    print("{0} -> ".format(node), end="")

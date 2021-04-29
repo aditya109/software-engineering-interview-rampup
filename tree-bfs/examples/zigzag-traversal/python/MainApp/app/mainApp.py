@@ -15,7 +15,7 @@ class MainApp:
 
     '''
     Given the root of a binary tree, return the zigzag level order traversal of its nodes' values. 
-    (i.e., from left to right, then right to left for the next level and alternate between).
+    (i.e., from left to right, then right to left for the successor level and alternate between).
     
     Example 1:
     Input: root = [3,9,20,null,null,15,7]

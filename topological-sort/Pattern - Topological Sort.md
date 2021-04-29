@@ -24,23 +24,24 @@ By definition, all rooted trees have a topological ordering since they do not co
 3. On the recursive callback of the DFS, add the current node to the topological ordering in the reverse order.
 ```
 
-```
-# pseduocode
+
+
+```pseudocode
+visited = set()
+outputStack = []
+function dfs:
+	Pass In: graph, node
+	if node not in visited
+		visited.add(node)
+		for neighbour in graph[node]
+			dfs(graph, neighbour)
+		outputStack.insert(0, node)
+	Pass Out: None
 function topsort(graph):
-	n = graph.numberOfNodes()
-	v = [false,....., false] # length N
-	ordering = [0, ...., 0] # length N
-	i = N-1 # Index for ordering array 
-	
-	for (at = 0; at < N; at++):
-		if V[at] == false:
-			visitedNodes = []
-			dfs(at, V, visitedNodes, graph)
-			for nodeId in visitedNodes:
-				ordering[i] = nodeId
-				i = i - 1
-    return ordering
-	
+	Pass In: graph
+	for node in graph
+		dfs(graph, node)
+	Pass Out: None
 ```
 
 

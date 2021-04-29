@@ -39,7 +39,7 @@ function longestSubstringWithKUniqueCharacters(s, k)
 		else 
 			add value at hashFrequencyTable[s[windowEnd]] as 1
 		if len(uniqueKeys) > k:
-			longestSubstringLength = maximum(longestSubstringLength, cucurrentSubstringLength - 1)
+			longestSubstringLength = maximum(longestSubstringLength, ccurrentSubstringLength - 1)
 			decrement hashFrequencyTable[s[windowEnd]] by 1
             increment windowStart by 1
      return longestSubstringLength
