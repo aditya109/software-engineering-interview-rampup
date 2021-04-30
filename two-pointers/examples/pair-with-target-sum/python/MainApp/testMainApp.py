@@ -1,6 +1,6 @@
-from unittest.case import expectedFailure
-from app.mainApp import MainApp
 import unittest
+
+from app.mainApp import MainApp
 
 
 class TestMainApp(unittest.TestCase):

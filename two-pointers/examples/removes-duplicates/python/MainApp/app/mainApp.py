@@ -1,6 +1,3 @@
-import sys
-
-
 class MainApp:
     def __init__(self):
         pass

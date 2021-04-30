@@ -30,6 +30,7 @@ class MainApp:
 
     def run(self, root):
         self.ans = 0
+
         def find_depth(node):
             if not node:
                 return 0
@@ -40,4 +41,3 @@ class MainApp:
 
         find_depth(root)
         return self.ans
-

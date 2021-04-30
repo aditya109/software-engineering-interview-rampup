@@ -30,8 +30,6 @@ Output: 5
 
 ## Solution 
 
-Solution name
-
 **Pseudocode**
 
 ```pseudocode
@@ -50,7 +48,7 @@ Function minimumDepthBinaryTree
             	q.enqueue((node.left, level+1))
             else
 	            q.enqueue((node.right, level+1))
-        add nodesInCurrentLevel -> nodesCorrespondingToLevels
-	Pass Out:nodesCorrespondingToLevels
+        
+	Pass Out:Nones
 ```
 
