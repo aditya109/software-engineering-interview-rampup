@@ -172,8 +172,6 @@ public int LongestSubstringLength(char[] arr, int k)
 }
 ```
 
-
-
 ## Fruits into Baskets (medium)
 
 In a row of trees, the `i`<sup>th</sup> tree produces fruit with type `tree[i]`.

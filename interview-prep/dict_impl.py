@@ -20,13 +20,12 @@ class HashTable:
         key_exist = False
         slot = self.hashmap[hash_key]
 
-        for i, kv in enumerate(slot):
-            k, v = kv
+        for _idx, (k, v) in enumerate(slot):
             if key == k:
                 key_exist = True
                 break
         if key_exist:
-            slot[i] = (key, value)
+            slot[_idx] = (key, value)
         else:
             slot.append((key, value))
 
@@ -34,8 +33,7 @@ class HashTable:
         hash_key = self.hashing_func(key)
         slot = self.hashmap[hash_key]
 
-        for kv in slot:
-            k, v = kv
+        for k, v in slot:
             if key == k:
                 return v
             else:
