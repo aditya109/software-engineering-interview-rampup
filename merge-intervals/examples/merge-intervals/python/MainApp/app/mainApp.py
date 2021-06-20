@@ -6,7 +6,7 @@ class MainApp:
         pass
 
     '''
-    Given an array of intervals where intervals[i] = [starti, endi], 
+    Given an array of intervals where intervals[i] = [start, end], 
     merge all overlapping intervals, 
     and return an array of the non-overlapping intervals that cover all the intervals in the input.
 
@@ -25,22 +25,18 @@ class MainApp:
 
     @staticmethod
     def run(intervals: List[List[int]]) -> List[List[int]]:
-        # assuming the array is sorted
-        stack = []
-        merged_intervals = []
 
+        intervals.sort(key=lambda x: x[0])  # uncomment this line if the intervals are not sorted
+        if intervals is []:
+            return []
+
+        result_stack = [intervals[0]]
         for interval in intervals:
-            if stack is []:
-                stack.append(interval)
-                # continue
+            top_stack = result_stack[-1]
+            if interval[0] <= top_stack[1]:
+                # interval tuple and top_stack tuple can be merged
+                new_interval = [min(interval[0], top_stack[0]), max(interval[1], top_stack[1])]
+                result_stack[-1] = new_interval
             else:
-                stack_lower, stack_upper = stack[-1]
-                current_lower, current_upper = interval
-
-
-
-
-        return merged_intervals
-
-
-
+                result_stack.append(interval)
+        return result_stack

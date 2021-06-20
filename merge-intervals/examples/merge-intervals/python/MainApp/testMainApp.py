@@ -8,24 +8,20 @@ class TestMainApp(unittest.TestCase):
     def setUp(self):
         self._arguments = [
             {
-                'arr': [4, 2, 1, 7, 8, 1, 2, 8, 1, 0],
-                'k': 3,
-                'expectedResult': 16
+                'arr': [[1, 3], [2, 6], [8, 10], [15, 18]],
+                'expectedResult': [[1, 6], [8, 10], [15, 18]]
             },
             {
-                'arr': [4, 2, 1, 7, 8, 1, 2, 8, 1, 0],
-                'k': 4,
-                'expectedResult': 19
+                'arr': [[1, 4], [4, 5]],
+                'expectedResult': [[1, 5]]
             },
             {
-                'arr': [4, 2, 1, 7, 8, 1, 2, 8, 1, 0],
-                'k': 5,
-                'expectedResult': 26
+                'arr': [[1, 4]],
+                'expectedResult': [[1, 4]]
             },
             {
-                'arr': [4, 2, 1, 7, 8, 8, 1, 0],
-                'k': 3,
-                'expectedResult': 23
+                'arr': [[1, 4], [5, 6]],
+                'expectedResult': [[1, 4], [5, 6]]
             },
         ]
         self._mainAppInstance = MainApp()
