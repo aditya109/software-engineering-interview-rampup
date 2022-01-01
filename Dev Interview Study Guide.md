@@ -2,15 +2,15 @@
 
 ## Schedule
 
-- 2 hours each weekday
+- 3 hours each weekday
   - 1 hour in the AM
   - 2 hours in the PM
-- 3 hours each Saturday
+- 4 hours each Saturday
 - 2 hours each Sunday
 - 7 days a week
 - Monday through Sunday
 
-Approximately 20 hours a week
+Approximately 21 hours a week
 
 ## Weekly Detailed Schedule
 

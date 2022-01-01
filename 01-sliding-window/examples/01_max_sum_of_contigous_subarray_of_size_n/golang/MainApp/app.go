@@ -1,5 +1,4 @@
-package mainapp
-
+package main
 import "math"
 
 /**
