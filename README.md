@@ -3,7 +3,7 @@
 
 ```
 grokking-the-coding-interview
-├───0-1-knapsack
+├───0-1-knapsack 
 ├───bitwise-XOR
 ├───codesetup
 ├───cyclic-sort
@@ -13,7 +13,7 @@ grokking-the-coding-interview
 ├───merge-intervals
 ├───miscellaneous
 ├───modified-binary-search
-├───sliding-window
+├───sliding-window ✔️
 ├───subsets
 ├───top-k-elements
 ├───topological-sort
