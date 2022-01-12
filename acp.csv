@@ -1,0 +1,183 @@
+﻿Q.No,Problem Name,Detailed Solution,Problem Link,Video Solution,C++ Code,Java Code
+1,Set Matrix Zeros,Solution,Click,Youtube,Code,Code
+2,Pascal Triangle,Solution,Click,YouTube,Code,Code
+3,Next Permutation,Solution,Click,YouTube,Code,Code
+4,Kadane Algorithm,Solution,Click,YouTube,Code,Code
+5,Sort an array of 0 1 2,Solution,Click,YouTube,Code,Code
+6,Stock Buy and Sell,Solution,Click,YouTube,Code,Code
+1,Rotate Matrix,Solution,Click,Youtube,Code,Code
+2,Merge Overlapping Subintervals,Solution,Click,YouTube,Code,Code
+3,Merge two sorted Arrays without extra space,Solution,Click,YouTube,Code,Code
+4,Find the duplicate in an array of N+1 integers.,Solution,Click,YouTube,Code,Code
+5,Repeat and Missing Number,Solution,Click,YouTube,Code,Code
+6,Inversion of Array (Pre-req: Merge Sort),Solution,Click,YouTube,Code,Code
+1,Search in a 2d Matrix,Solution,Click,Youtube,Code,Code
+2,"Pow(X,n)",Solution,Click,YouTube,Code,Code
+3,Majority Element (greater than half times),Solution,Click,YouTube,Code,Code
+4,Majority Element (greater than one third times),Solution,Click,YouTube,Code,Code
+5,Grid Unique Paths,Solution,Click,YouTube,Code,Code
+6,Reverse Pairs (Leetcode),Solution,Click,YouTube,Code,Code
+1,2-Sum-Problem,Solution,Click,Youtube,Code,Code
+2,4-sum-Problem,Solution,Click,YouTube,Code,Code
+3,Longest Consecutive Sequence,Solution,Click,YouTube,Code,Code
+4,Largest Subarray with 0 sum,Solution,Click,YouTube,Code,Code
+5,Count number of subarrays with given Xor K,Solution,Click,YouTube,Code,Code
+6,Longest Substring without repeat,Solution,Click,YouTube,Code,Code
+1,Reverse a LinkedList,Solution,Click,Youtube,Code,Code
+2,Find the middle of LinkedList,Solution,Click,YouTube,Code,Code
+3,Merge two sorted Linked List (use method used in mergeSort),Solution,Click,YouTube,Code,Code
+4,Remove N-th node from back of LinkedList,Solution,Click,YouTube,Code,Code
+5,Add two numbers as LinkedList,Solution,Click,YouTube,Code,Code
+6,Delete a given Node when a node is given. (0(1) solution),Solution,Click,YouTube,Code,Code
+1,Find intersection point of Y LinkedList,Solution,Click,Youtube,Code,Code
+2,Detect a cycle in Linked List,,Click,YouTube,Code,Code
+3,Reverse a LinkedList in groups of size k.,,Click,YouTube,Code,Code
+4,Check if a LinkedList is palindrome or not.,,Click,YouTube,Code,Code
+5,Find the starting point of the Loop of LinkedList,,Click,YouTube,Code,Code
+6,Flattening of a LinkedList,,Click,YouTube,Code,Code
+7,Rotate a LinkedList,,Click,YouTube,Code,Code
+1,Clone a Linked List with random and next pointer,,Click,Youtube,Code,Code
+2,3 sum,Solution,Click,YouTube,Code,Code
+3,Trapping rainwater,Solution,Click,YouTube,Code,Code
+4,Remove Duplicate from Sorted array,Solution,Click,YouTube,Code,Code
+5,Max consecutive ones,Solution,Click,YouTube,Code,Code
+1,N meeting in one room,Solution,Click,Youtube,Code,Code
+2,Minimum number of platforms required for a railway,Solution,Click,YouTube,Code,Code
+3,Job sequencing Problem,Solution,Click,YouTube,Code,Code
+4,Fractional Knapsack Problem,Solution,Click,YouTube,Code,Code
+5,Greedy algorithm to find minimum number of coins,Solution,Click,YouTube,Code,Code
+6,Activity Selection (it is the same as N meeting in one room),Solution,Click,Youtube,Code,Code
+1,Subset Sums,Solution,Click,Youtube,Code,Code
+2,Subset-II,Solution,Click,YouTube,Code,Code
+3,Combination sum-1,Solution,Click,YouTube,Code,Code
+4,Combination sum-2,,Click,YouTube,Code,Code
+5,Palindrome Partitioning,Solution,Click,YouTube,Code,Code
+6,K-th permutation Sequence,Solution,Click,YouTube,Code,Code
+1,Print all permutations of a string or array,Solution,Click,Youtube,Code,Code
+2,N queens Problem,Solution,Click,Youtube,Code,Code
+3,Sudoku Solver,,Click,Youtube,Code,Code
+4,M coloring Problem,Solution,Click,Youtube,Code,Code
+5,Rat in a Maze,Solution,Click,Youtube,Code,Code
+6,Word Break (print all ways),,Click,Youtube,Code,Code
+1,The N-th root of an integer,Solution,Click,Youtube,Code,Code
+2,Matrix Median,,Click,Youtube,Code,Code
+3,Find the element that appears once in a sorted array and the rest element appears twice (Binary search),Solution,Click,Youtube,Code,Code
+4,Search element in a sorted and rotated array or  find pivot where it is rotated,Solution,Click,Youtube,Code,Code
+5,Median of 2 sorted arrays,Solution,Click,Youtube,Code,Code
+6,K-th element of two sorted arrays,Solution,Click,Youtube,Code,Code
+7,Allocate Minimum Number of Pages,Solution,Click,Youtube,Code,Code
+8,Aggressive Cows,Solution,Click,Youtube,Code,Code
+1,Implement Trie (Prefix Tree),,Click,Youtube,Code,Code
+2,Implement Trie 2 (Prefix Tree),,Click,Youtube,Code,Code
+3,Longest String with All Prefixes,,Click,Youtube,Code,Code
+4,Number of Distinct Substrings in a String,,Click,Youtube,Code,Code
+4,Power Set (this is very important),,Click,Youtube,Code,Code
+5,Maximum XOR of two numbers in an array,Solution,Click,Youtube,Code,Code
+6,Maximum XOR With an Element From Array,,Click,Youtube,Code,Code
+1,Implement Stack Using Arrays,Solution,Click,Youtube,Code,Code
+2,Implement Queue Using Arrays,Solution,Click,Youtube,Code,Code
+3,Implement Stack using Queue (using single queue),Solution,Click,Youtube,Code,Code
+4,Implement Queue using Stack (0(1) amortized method),Solution,Click,Youtube,Code,Code
+5,Check for balanced parentheses,Solution,Click,Youtube,Code,Code
+6,Next Greater Element,Solution,Click,Youtube,Code,Code
+7,Sort a Stack,,Click,Youtube,Code,Code
+1,Next Smaller Element,,Click,Youtube,Code,Code
+2,LRU cache (IMPORTANT),Solution,Click,Youtube,Code,Code
+3,LFU Cache,,Click,Youtube,Code,Code
+4,Largest rectangle in a histogram,Solution,Click,Two-Pass: Youtube  One Pass: Youtube,Code,Code
+5,Sliding Window maximum,Solution,Click,Youtube,Code,Code
+6,Implement Min Stack,Solution,Click,Youtube,Code,Code
+7,Rotten Orange (Using BFS),Solution,Click,,,
+8,Stock Span Problem,,Click,,,
+9,Find the maximum of minimums of every window size,,Click,,,
+10,The Celebrity Problem,,Click,,,
+1,Reverse Words in a String,Solution,Click,Youtube,Code,Code
+2,Longest Palindrome in a string,,Click,Youtube,Code,Code
+3,Roman Number to Integer and vice versa,,Click,Youtube,Code,Code
+4,Implement ATOI or STRSTR,,Click,Youtube,Code,Code
+5,Longest Common Prefix,,Click,Youtube,Code,Code
+6,Rabin Karp,,Click,Youtube,Code,Code
+1,Z-Function,Click,Youtube,Code,Code,
+2,KMP algo  or  LPS(pi) array,Click,YouTube,Code,Code,
+3,Minimum characters needed to be inserted in the beginning to make it palindromic,Click,YouTube,Code,Code,
+4,Check for Anagrams,Click,YouTube,Code,Code,
+5,Count and Say,Click,YouTube,Code,Code,
+6,Compare version numbers,Click,YouTube,Code,Code,
+1,Inorder Traversal Morris Traversal Iterative or Recursive,Click,Youtube (Recursive) Youtube (Iterative) Youtube (Morris Traversal),Code (Recursive) Code (Iterative),Code (Recursive) Code (Iterative) Code (Morris)
+2,Preorder Traversal,Morris Traversal  Solution,Click,YouTube Youtube (Morris Traversal),Code (Morris),Code
+3,Postorder Traversal,Solution,Click,YouTube,Code,Code
+4,LeftView Of Binary Tree,Solution,Click,YouTube,Code,Code
+5,Bottom View of Binary Tree,Solution,Click,YouTube,Code,Code
+6,Top View of Binary Tree,Solution,Click,YouTube,Code,Code
+7,Preorder inorder postorder in a single traversal,Solution,,Youtube,Code,Code
+8,Vertical order traversal,Solution,Click,Youtube,Code,Code
+9,Root to node path in a Binary Tree,Solution,Click,Youtube,Code,Code
+10,Max width of a Binary Tree,Solution,Click,Youtube,Code,Code
+1,Level order Traversal  or  Level order traversal in spiral form,Solution,Click,Youtube,Code,Code
+2,Height of a Binary Tree,Solution,Click,YouTube,Code,Code
+3,Diameter of Binary Tree,Solution,Click,YouTube,Code,Code
+4,Check if the Binary tree is height-balanced or not,Solution,Click,YouTube,Code,Code
+5,LCA in Binary Tree,Solution,Click,YouTube,Code,Code
+6,Check if two trees are identical or not,Solution,Click,YouTube,Code,Code
+7,Zig Zag Traversal of Binary Tree,Solution,Click,Youtube,Code,Code
+8,Boundary Traversal of Binary Tree,Solution,Click,Youtube,Code,Code
+1,Maximum path sum,Solution,Click,Youtube,Code,Code
+2,Construct Binary Tree from inorder and preorder,,Click,YouTube,Code,Code
+3,Construct Binary Tree from Inorder and Postorder,,Click,YouTube,Code,Code
+4,Symmetric Binary Tree,Solution,Click,YouTube,Code,Code
+5,Flatten Binary Tree to LinkedList,Solution,Click,YouTube,Code,Code
+6,Check if Binary Tree is the mirror of itself or not,,Click,YouTube,Code,Code
+7,Check for Children Sum Property,Solution,,,,
+1,Populate Next Right pointers of Tree,Click,Youtube,Code,Code,
+2,Search given Key in BST,Click,YouTube,Code,Code,
+3,Construct BST from given keys,Click,YouTube,Code,Code,
+4,Construct BST from preorder traversal,Click,Youtube,Code,Code,
+5,Check is a BT is BST or not,Click,YouTube,Code,Code,
+6,Find LCA of two nodes in BST,Click,YouTube,Code,Code,
+7,Find the inorder predecessor or successor of a given Key in BST.,Click,YouTube,Code,Code,
+1,Floor in a BST,,Click,Youtube,Code,Code
+2,Ceil in a BST,,Click,Youtube,Code,Code
+3,Find K-th smallest element in BST,Solution,Click,YouTube,Code,Code
+4,Find K-th largest element in BST,Solution,Click,YouTube,Code,Code
+5,Find a pair with a given sum in BST,,Click,YouTube,Code,Code
+6,BST iterator,,Click,YouTube,Code,Code
+7,Size of the largest BST in a Binary Tree,,Click,YouTube,Code,Code
+8,Serialize and deserialize Binary Tree,Solution,Click,YouTube,Code,Code
+1,Binary Tree to Double Linked List,Click,Youtube,Code,Code,
+2,Find median in a stream of running integers.,Click,YouTube,Code,Code,
+3,K-th largest element in a stream.,Click,YouTube,Code,Code,
+4,Distinct numbers in Window.,Click,YouTube,Code,Code,
+5,K-th largest element in an unsorted array.,Click,YouTube,Code,Code,
+6,Flood-fill Algorithm,Click,YouTube,Code,Code,
+1,Clone a graph (Not that easy as it looks),,Click,Youtube,Code,Code
+2,DFS,Solution,Click,YouTube,Code,Code
+3,BFS,Solution,Click,YouTube,Code,Code
+4,Detect A cycle in Undirected Graph using BFS,Solution,Click,YouTube,Code,Code
+5,Detect A cycle in Undirected Graph using DFS,Solution,Click,YouTube,Code,Code
+6,Detect A cycle in a Directed Graph using DFS,Solution,Click,YouTube,Code,Code
+7,Detect A cycle in a Directed Graph using BFS,,Click,YouTube,Code,Code
+8,Topological Sort,Sol: BFS  Sol: DFS,Click,DFS: YouTube  BFS: Youtube,Code,Code
+9,Number of islands (Do in Grid and Graph both),,Click,YouTube,Code,Code
+10,Bipartite Check using BFS,,Click,YouTube,Code,Code
+11,Bipartite Check using DFS,Solution,Click,YouTube,Code,Code
+1,Strongly Connected Component(using KosaRaju algo),Solution,Click,Youtube,Code,Code
+2,Dijkstra Algorithm,Solution,Click,YouTube,Code,Code
+3,Bellman-Ford Algo,Solution,Click,YouTube,Code,Code
+4,Floyd Warshall Algorithm,,Click,YouTube,Code,Code
+5,MST using Prim Algo,Solution,Click,YouTube,Code,Code
+6,MST using Kruskal Algo,Solution,Click,YouTube,Code,Code
+1,Max Product Subarray,Solution,Click,Youtube,Code,Code
+2,Longest Increasing Subsequence,,Click,YouTube,Code,Code
+3,Longest Common Subsequence,Solution,Click,YouTube,Code,Code
+4,0-1 Knapsack,,Click,YouTube,Code,Code
+5,Edit Distance,,Click,YouTube,Code,Code
+6,Maximum sum increasing subsequence,,Click,YouTube,Code,Code
+7,Matrix Chain Multiplication,,Click,YouTube,Code,Code
+1,Maximum sum path in the matrix (count paths and similar type do also backtrack to find the maximum path),Click,Youtube,Code,Code,
+2,Coin change,Click,YouTube,Code,Code,
+3,Subset Sum,Click,YouTube,Code,Code,
+4,Rod Cutting,Click,YouTube,Code,Code,
+5,Egg Dropping,Click,YouTube,Code,Code,
+6,Word Break,Click,YouTube,Code,Code,
+7,Palindrome Partitioning (MCM Variation),Click,Youtube,Code,Code,
+8,Maximum profit in Job scheduling,Click,Youtube,Code,Code,
