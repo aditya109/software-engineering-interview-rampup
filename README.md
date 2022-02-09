@@ -1,4 +1,5 @@
 # Grokking-The-Coding-Interview
+> Don't just fork it, star it as well 🌟 !
 ## Repository Structure
 
 ```
