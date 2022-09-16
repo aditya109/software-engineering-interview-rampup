@@ -139,7 +139,7 @@
 | 5.   | **Maximum XOR of two numbers in an array**    | [Solution](https://takeuforward.org/data-structure/maximum-xor-of-two-numbers-in-an-array/) | [Click](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/) | [Youtube](https://www.youtube.com/watch?v=EIhAwfHubE8&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=6) | [Code](https://github.com/striver79/StriversTrieSeries/blob/main/L5MaxPairCpp) | [Code](https://github.com/striver79/StriversTrieSeries/blob/main/L5MaxNumTrieJava) |
 | 6.   | **Maximum XOR With an Element From Array**    |                                                              | [Click](https://leetcode.com/problems/maximum-xor-with-an-element-from-array/) | [Youtube](https://www.youtube.com/watch?v=Q8LhG9Pi5KM&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=7) | [Code](https://github.com/striver79/StriversTrieSeries/blob/main/L6MaxXorQueriesCpp) | [Code](https://github.com/striver79/StriversTrieSeries/blob/main/L6MaxXorQueriesJava) |
 
-**Day-13** : ***\*(Stack and Queue)\**** 
+**Day-13** : ***\*(Stack and Queue)\****
 
 | Q.No | Problem Name                                            | Solution                                                     | Problem Link                                                 | Video Solution                                               | C++ Code | Java Code |
 | ---- | ------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- | --------- |
@@ -316,21 +316,21 @@
 | 7.   | **Palindrome Partitioning (MCM Variation)**                  | [Click](https://practice.geeksforgeeks.org/problems/palindromic-patitioning4845/1) | Youtube        | Code     | Code      |
 | 8.   | **Maximum profit in Job scheduling**                         | [Click](https://practice.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1) | Youtube        | Code     | Code      |
 
-**Day-27:** 
+**Day-27:**
 
-1. Revise OS notes that you would have made during your sem 
-2. If not made notes, spend 2 or 3 days and make notes from Knowledge Gate. 
+1. Revise OS notes that you would have made during your sem
+2. If not made notes, spend 2 or 3 days and make notes from Knowledge Gate.
 
-**Day-28:** 
+**Day-28:**
 
-1. Revise DBMS notes that you would have made during your semesters. 
-2. If not made notes, spend 2 or 3 days and make notes from Knowledge Gate. 
+1. Revise DBMS notes that you would have made during your semesters.
+2. If not made notes, spend 2 or 3 days and make notes from Knowledge Gate.
 
-**Day-29:** 
+**Day-29:**
 
-1. Revise CN notes, that you would have made during your sem. 
-2. If not made notes, spend 2 or 3 days and make notes from Knowledge Gate. 
+1. Revise CN notes, that you would have made during your sem.
+2. If not made notes, spend 2 or 3 days and make notes from Knowledge Gate.
 
-**Day-30:** 
+**Day-30:**
 
 1. Make a note of how will your represent your projects, and prepare all questions related to tech which you have used in your projects. Prepare a note which you can say for 3-10 minutes when he asks you that say something about the project.
