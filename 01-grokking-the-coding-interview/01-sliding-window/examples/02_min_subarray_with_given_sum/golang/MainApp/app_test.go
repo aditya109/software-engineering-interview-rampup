@@ -3,21 +3,22 @@ package mainapp
 import "testing"
 
 func TestRun(t *testing.T) {
-	arguments := []struct {
-		x int
-		y int
-		n int
-	} {
-		{1, 1, 2},
-		{1, 2, 3},
-		{2, 2, 4},
-		{5, 2, 7},
+	type args struct {
+		nums   []int
+		target int
 	}
-
-	for _, argument := range arguments {
-		actualResult := Run(argument.x, argument.y)
-		if actualResult != 0 {
-			t.Errorf("Incorrect answer, got: %d expected: %d.", actualResult,0)
-		}
+	tests := []struct {
+		name string
+		args args
+		want int
+	}{
+		// TODO: Add test cases.
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := Run(tt.args.nums, tt.args.target); got != tt.want {
+				t.Errorf("Run() = %v, want %v", got, tt.want)
+			}
+		})
 	}
 }

@@ -19,9 +19,9 @@ import (
 * Explanation: Replace the one 'A' in the middle with 'B' and form "AABBBBA".
 * The substring "BBBB" has the longest repeating letters, which is 4.
 *
-*/
+ */
 
-// Run 
+// Run
 func Run(s string, k int) int {
 	var length int = len(s)          // length stores the string `s` length
 	var charCounts = make([]int, 26) // charCounts stores the frequency according to all the alphabets
@@ -36,13 +36,13 @@ func Run(s string, k int) int {
 		// we find the corresponding alphabetical index in the character and increase its frequency by 1
 		charCounts[s[windowEnd]-'A']++
 		currentCharCount := charCounts[s[windowEnd]-'A']
-		maxCount = int64(math.Max(float64(maxCount), float64(currentCharCount)))
+		maxCount = int(math.Max(float64(maxCount), float64(currentCharCount)))
 
 		for windowStart <= windowEnd && windowEnd-windowStart-maxCount+1 > k {
 			charCounts[s[windowEnd]-'A']--
 			windowStart++
 		}
-		maxLength = math.Max(maxLength, windowEnd-windowStart+1)
+		maxLength = int(math.Max(float64(maxLength), float64(windowEnd-windowStart+1)))
 	}
 	return maxLength
 }
