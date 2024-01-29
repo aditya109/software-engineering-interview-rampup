@@ -1,0 +1,50 @@
+import unittest
+
+from app.mainApp import MainApp, TreeNode
+
+
+class TestMainApp(unittest.TestCase):
+
+    def setUp(self):
+        self._arguments = list()
+        start = TreeNode(3)
+        start.left = TreeNode(9)
+        start.right = TreeNode(20)
+
+        start.right.left = TreeNode(15)
+        start.right.right = TreeNode(7)
+        self._arguments.append(
+            {
+                'root': start,
+                'expectedResult': [[15, 7], [9, 20], [3]]
+            }
+        )
+
+        start = TreeNode(3)
+        self._arguments.append(
+            {
+                'root': start,
+                'expectedResult': [[3]]
+            }
+        )
+        start = None
+        self._arguments.append(
+            {
+                'root': start,
+                'expectedResult': []
+            }
+        )
+
+        self._mainAppInstance = MainApp()
+
+    @staticmethod
+    def is_equal(list1, list2):
+        for i in range(len(list1)):
+            if list1[i] != list2[i]:
+                return False
+        return True
+
+    def test_run(self):
+        for argument in self._arguments:
+            actual_result = self._mainAppInstance.run(argument['root'])
+            self.assertTrue(self.is_equal(argument['expectedResult'], actual_result))

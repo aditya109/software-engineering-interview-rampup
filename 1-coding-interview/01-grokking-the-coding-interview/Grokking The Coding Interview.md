@@ -1,0 +1,112 @@
+# Grokking The Coding Interview
+- [ ] sliding_window
+  - [ ] Maximum Sum Of Contigous Subarray Of Size N
+  - [ ] Minimum Subarray With Given Sum
+  - [ ] Longest Substring Length With K Unique Characters
+  - [ ] Fruits Into Baskets
+  - [ ] No Repeat Substring
+  - [ ] Longest Substring With Same Letters After Replacement
+  - [ ] Longest Subarray With Ones After Replacement
+  - [ ] Permutation In A String
+  - [ ] String Anagrams
+  - [ ] Smallest Window Containing Substring
+  - [ ] Words Concatenation
+- [ ] 0_1_knapsack
+  - [ ] Equal Subset Sum Partition
+  - [ ] Subset Sum
+  - [ ] Minimum Subset Sum Difference
+  - [ ] Number Of Subsets With Diff
+  - [ ] Count Of Subset Sum
+  - [ ] Target Sum
+- [ ] bitwise_xor
+  - [ ] Single Number
+  - [ ] Single Number - 2
+  - [ ] Complement Of Base 1 Decimal Number
+- [ ] fast_and_slow_pointers
+  - [ ] Linked List Cycle
+  - [ ] Middle Of Linked List
+  - [ ] Start Of Linked List Cycle
+  - [ ] Happy Number
+  - [ ] Palidrome Linked List
+  - [ ] Rearrange A Linked List
+  - [ ] Cycle In A Circular Array
+- [ ] in_place_reversal_of_linked_list
+  - [ ] Reverse A Linkedlist
+  - [ ] Reverse A Sub-list
+  - [ ] Reverse Every K-element Sub-list
+  - [ ] Reverse Alternating K-element Sub-list
+  - [ ] Rotate A Linked List
+- [ ] merge_intervals
+  - [ ] Merge Intervals
+  - [ ] Insert Interval
+  - [ ] Intervals Intersection
+  - [ ] Conflicting Appointments
+  - [ ] Minimum Meeting Rooms
+  - [ ] Maximum Cpu Load
+  - [ ] Employee Free Time
+- [ ] modified_binary_search
+  - [ ] Order-agnostic Binary Search
+  - [ ] Ceiling Of A Number
+  - [ ] Next Letter
+  - [ ] Number Range
+  - [ ] Search In A Sorted Infinite Array
+  - [ ] Minimum Difference Element
+  - [ ] Bitonic Array Maximum
+  - [ ] Search In A Bitonic Array
+  - [ ] Search In A Rotated Array
+  - [ ] Rotation Count
+- [ ] subsets
+  - [ ] Subsets
+  - [ ] Subsets With Duplicates
+  - [ ] Permutations
+  - [ ] String Permutations By Changing Case
+  - [ ] Balanced Parentheses
+  - [ ] Unique Generalized Abbreviations
+  - [ ] Evaluate Expressions
+  - [ ] Structurally Unique Binary Search Trees
+  - [ ] Count Of Structurally Unique Binary Search Trees
+- [ ] topological_sort
+  - [ ] Topological Sort
+  - [ ] Tasks Scheduling
+  - [ ] Tasks Scheduling Order
+  - [ ] All Tasks Scheduling Orders
+  - [ ] Alien Dictionary
+  - [ ] Reconstructing A Sequence
+  - [ ] Minimum Height Tree
+- [ ] tree_bfs
+  - [ ] Binary Tree Level Order Traversal
+  - [ ] Reverse Level Order Traversal
+  - [ ] Zigzag Traversal
+  - [ ] Level Averages In A Binary Tree
+  - [ ] Minimum Depth Of A Binary Tree
+  - [ ] Level Order Successor
+  - [ ] Connect Level Order Siblings
+  - [ ] Connect All Level Order Siblings
+  - [ ] Right View Of A Binary Tree
+- [ ] tree_dfs
+  - [ ] Binary Tree Path Sum
+  - [ ] All Paths For A Sum
+  - [ ] Sum Of Path Numbes
+  - [ ] Path With Given Sequence
+  - [ ] Count Paths For A Sum
+  - [ ] Tree Diameter
+  - [ ] Path With Maximum Sum
+- [ ] two_heaps
+  - [ ] Find The Median Of A Number Stream
+  - [ ] Sliding Window Median
+  - [ ] Maximise Capital
+  - [ ] Next Interval
+- [ ] two_pointers
+  - [ ] Pair With Target Sum
+  - [ ] Removes Duplicates
+  - [ ] Squaring A Sorted Array
+  - [ ] Triplet Sum To Zero
+  - [ ] Triplet Sum Close To Target
+  - [ ] Triplets With Smaller Sum
+  - [ ] Subarrays With Products Less Than A Target
+  - [ ] Quadruple Sum To Target
+  - [ ] Comparing Strings Containing Backspaces
+- [ ] miscellaneous
+  - [ ] Invert Binary Tree
+  - [ ] Least Common Ancestor
+  - [ ] Minimum Window Sort
