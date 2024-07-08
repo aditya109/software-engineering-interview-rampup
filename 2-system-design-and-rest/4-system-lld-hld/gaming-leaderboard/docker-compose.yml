@@ -1,0 +1,16 @@
+services:
+  recon_db:
+    container_name: recon_db
+    image: postgres:12
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: leaderboard
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+
+volumes:  
+  pgdata: {}
