@@ -1,22 +1,41 @@
 package mainapp
 
-import "testing"
+import (
+	"testing"
+)
 
-func TestRun(t *testing.T) {
+func Test_getHeight(t *testing.T) {
 	type args struct {
-		t *BinaryTree
+		n *Node
 	}
+
 	tests := []struct {
 		name string
 		args args
 		want int
 	}{
-		{},
+		{
+			name: "TC #1",
+			args: args{
+				n: &Node{
+					Value: 1,
+					Left: &Node{
+						Value: 2,
+						Left:  &Node{Value: 4},
+					},
+					Right: &Node{
+						Value: 3,
+						Right: &Node{Value: 5},
+					},
+				},
+			},
+			want: 3,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := Run(tt.args.t); got != tt.want {
-				t.Errorf("Run() = %v, want %v", got, tt.want)
+			if got := getHeight(tt.args.n); got != tt.want {
+				t.Errorf("getHeight() = %v, want %v", got, tt.want)
 			}
 		})
 	}

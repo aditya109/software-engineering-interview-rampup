@@ -1,4 +1,4 @@
-# Composite Design Pattern
+# Visitor Design Pattern
 
 ## What is it ?
 

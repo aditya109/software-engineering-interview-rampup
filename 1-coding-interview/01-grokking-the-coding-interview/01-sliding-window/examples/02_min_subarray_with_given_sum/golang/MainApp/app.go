@@ -1,5 +1,7 @@
 package mainapp
 
+import "math"
+
 /*
 Given an array of positive integers nums and a positive integer target,
 return the minimal length of a contiguous subarray [nums_l, nums_l+1, ..., nums_r-1, nums_r] of which the sum is greater than or equal to target.
@@ -28,19 +30,25 @@ Output: 0
 **/
 
 func Run(nums []int, target int) int {
-	var length, interimSum int
-	length = 0
-	interimSum = 0
+	n := len(nums)
+	minLen := math.MaxInt
+	sum, left := 0, 0
 
-	for i := 0; i < len(nums); i++ {
-		interimSum += nums[i]
+	for right := 0; right < n; right++ {
+		sum += nums[right]
 
-		if interimSum > target {
-			// do something, as interim sum is much much greater than target
-		} else {
-			// do something, if interim sum is less than target
+		for sum >= target {
+			minLen = min(minLen, right-left+1)
+			sum -= nums[left]
+			left++
 		}
 	}
+	if minLen == math.MaxInt {
+		return 0
+	}
+	return minLen
+}
 
-	return length
+func min(a, b int) int {
+	return int(math.Min(float64(a), float64(b)))
 }
