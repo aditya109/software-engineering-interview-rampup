@@ -26,8 +26,8 @@ var DesignPatterns = []string{
 	//"Mediator",
 	"Memento",
 	//"Observer",
-	"State",
-	"Strategy",
+// 	"State",
+// 	"Strategy",
 	//"Template Method",
 	//"Visitor",
 }
